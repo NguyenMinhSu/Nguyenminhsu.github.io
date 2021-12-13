@@ -1,0 +1,22 @@
+div {
+    padding: 8px;
+}
+h1 {
+    text-align: center;
+}
+
+.phuquoc {
+    width: 700px;
+}
+
+.item{
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    padding: 8px;
+}
+
+.imgCho{
+    max-width="300px";
+}
+

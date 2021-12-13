@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 90%;
+}
+.container {
+  display: flex;
+  width: 80%;
+  background-color: white;
+  margin: 10%;
+  height: 700px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.beccon {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhbeccon {
+  height: 80%;
+  width: 100%;
+}
+.infbeccon {
+  align-items: center;
+}
+.infbeccon2 {
+  color: red;
+}
+
+.becto {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhbecto {
+  height: 80%;
+  width: 100%;
+}
+.infbecto2 {
+  color: red;
+}
+
+.becbi {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhbi {
+  height: 80%;
+  width: 100%;
+}
+.infbi2 {
+  color: red;
+}
+
+.phuquoc {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhpq {
+  height: 80%;
+  width: 100%;
+}
+.infpq2 {
+  color: red;
+}
+
+.choxoay {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhxoay {
+    height: 80%;
+  width: 100%;
+}
+
+.infxoaythai2 {
+  color: red;
+}
+.choco {
+  background-color: lightblue;
+  height: 48%;
+  width: 32%;
+}
+.anhchoco {
+  height: 80%;
+  width: 100%;
+}
+.infchoco2 {
+  color: red;
+}

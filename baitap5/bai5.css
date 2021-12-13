@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  
+  .block {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .block1 {
+    background-color: red;
+    height: 400px;
+    width: 60%;
+  }
+  
+  .block2 {
+    background-color: green;
+    height: 200px;
+    width: 40%;
+  }
+  
+  .block3 {
+    background-color: blue;
+    height: 200px;
+    width: 40%;
+  }
+  .doan2 {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    height: 400px;
+  }
+  
+  .doan3 {
+    justify-content: center;
+    align-items: center;
+  }
+  .doan3a {
+    display: flex;
+    float: left;
+    width: 60%;
+    height: 400px;
+    background-color: red;
+  }
+  
+  .doan3b {
+    width: 38%;
+    height: 200px;
+    background-color: green;
+    display: flex;
+    float: right;
+  }
+  
+  .doan3c {
+    width: 38%;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    float: right;
+  }
+  
+  .container4 {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+  }
+  .doan4a {
+    background-color: red;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+  }
+  .doan4b {
+    background-color: green;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+  }
+  .doan4c {
+    background-color: blue;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+  }
