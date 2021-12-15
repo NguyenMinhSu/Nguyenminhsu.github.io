@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    text-align: center;
+  margin: 0;
+  background-color: yellowgreen;
+}
+h1 {
+  text-align: center;
+  color: blue;
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+img {
+  width: 100%;
+}
+.inf {
+  width: 60%;
+  font-size: 20px;
+  
+}
+.animal {
+  display: flex;
+}
+.sucvat {
+   background-color: aquamarine;
+   width: 33,3333%; width: 33%; height: 48%;
+}
+.kiemtra {
+    display: flex; flex-wrap: wrap;height: 700px;
+    justify-content: space-around;
+}
+
+.anh {
+    height: 80%;
+}
