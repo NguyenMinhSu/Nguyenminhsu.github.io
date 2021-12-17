@@ -12,8 +12,8 @@ a {
 }
 a:hover {
   color: red;
+  transition: 300ms;
 }
-
 
 h1 {
   text-align: center;
@@ -35,12 +35,15 @@ h1 {
 .itemcon {
   width: 32%;
   background-color: whitesmoke;
-  
 }
 
 .anh {
   width: 100%;
 }
 .anh:hover {
-  max-width: 90%;
+ max-width: 90%;
+ 
+}
+.img:hover {
+  transition: 300ms;
 }

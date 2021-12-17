@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 20%;
+  margin-top: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 700px;
+  justify-content: space-around;
+}
+.item {
+  width: 32%;
+  background-color: white;
+  height: 48%;
+  text-align: center;
+  
+}
+img {
+width: 100%;
+
+}
+img:hover {
+  max-width: 90%;
+}
+
+
+.inf {
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+a {
+  width: 100%;
+  text-decoration: none;
+  color: red;
+  font-size: 100%;display: flex;
+  flex-direction: column-reverse;
+  
+}
+a:hover {
+  color: blue;
+  transition: 300ms;
+}
+.anh {
+  height: 70%;
+  display: flex;
+  
+}
+
+.anhchitiet img {
+  max-width: 400px;
+}
+
+.chitiet {
+  margin: 0;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 30px;
+  color: blue;
+}
+.achitiet {
+  color: red;
+  font-size: 30px;
+}
