@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+      // Bài 1. Sử dụng câu lệnh if để viết 1 hàm với 2 tham số bất kỳ,
+      //kiểm tra xem 2 tham số có phải là number không
+      //và tìm ra số lớn nhất trong 2 số đó.
+
+      function test(x, y) {
+        if ( typeof  x == "number" && typeof y == "number") {
+          document.write ( "số lớn hơn là " + Math.max(x, y) );
+        }
+      }
+
+      //Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số. Kiểm tra tham số đầu vào phải là 1 số nguyên >= 0,
+      //sau đó tính giai thừa và in ra kết quả.
+      var number;
+      function tinhgiaithua(number) {
+        if (Number.isInteger(number) && number > 0) {
+          var kq = 1;
+          for (i = 1; i <= number; i++) {
+            kq *= i;
+          }
+          document.write(kq);
+        }
+      }
+
+      //Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và
+      //sắp xếp theo thứ tự giảm dần.
+      function arrangenumberlist(numberlist) {
+        let listarrange = [];
+        listarrange = numberlist.filter(function (value) {
+          return value % 2 === 0;
+        });
+        listarrange.sort(function (a, b) {
+          return b - a;
+        });
+        return listarrange;
+      }
+
+      //bai4.Bài 4. Một sinh viên có điểm kiểm tra môn lập trình web là x dưới dạng số (0 <= x <= 10). Hãy
+      //chuyển điểm số sang dạng chữ với điều kiện sau:
+
+      // Từ 8.5 đến 10: Điểm A
+      // Từ 7 đến dưới 8.5: Điểm B
+      // Từ 5.5 đến dưới 7: Điểm C
+      // Từ 4 đến dưới 5.5: Điểm D
+      // Từ 0 đến dưới 4: Điểm F
+
+      function rank(score) {
+        if (score >= 8.5) {
+          return "điểm A";
+        }
+
+        if (score >= 7) {
+          return "điểm B";
+        }
+        if (score >= 5.5) {
+          return "điểm C";
+        }
+        if (score >= 4) {
+          return "điểm D";
+        } else {
+          return " điểm F";
+        }
+      }
+    
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Bài 1. In ra màn hình ngày, tháng năm hiện tại và xác định đó là mùa nào trong năm. Ví dụ lấy ngày tháng năm hiện tại bằng đối tượng Date của javascript:
+
+      let now = new Date(); // Lấy thời gian hiện tại
+      let date = now.getDate(); // Lấy ngày từ thời gian hiện tại
+      let month = now.getMonth() + 1; // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+      let year = now.getFullYear(); // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại
+      function tinhngaythang() {
+        if (month > 1 && month <= 3) {
+          return "mua xuan";
+        } else if (month >= 4 && month < 7) {
+          return "mua ha ";
+        } else if (month >= 7 && month < 10) {
+          return "mua thu";
+        } else {
+          return "mua dong";
+        }
+      }
+
+      // Bài 2. Cho 1 mảng chỉ gồm các giá trị true và false (kiểu boolean). Hãy kiểm tra xem giá trị true
+      // xuất hiện lần đầu trong mảng ở vị trí nào.
+
+      function kiemtra(boolean) {
+        for (i = 0; i < boolean.length; i++) {
+          if (boolean.length[i] === true) {
+            console.log(i);
+            return "gia tri true dau tien o vi tri thu " + (i + 1);
+          }
+        }
+        return "khong co gia tri nao bang true";
+      }
+
+      //Bài 3. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
+      //Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+      let account = {
+        username: "username",
+        password: "secrit",
+        confirm: "secrit",
+      };
+      function taotaikhoan(account) {
+        if (
+          account.username.length > 0 &&
+          account.username.length < 30 &&
+          account.password.length > 6 &&
+          account.confirm === account.password
+        ) {
+          return "pass";
+        } else {
+          return "fail";
+        }
+      }
+
+      //Bài 4. Chỉ dùng vòng lặp for hoặc while, viết function in ra màn hình các số từ 1 đến 100 sao cho những giá trị là chẵn sẽ có màu xanh,
+      // những giá trị là lẻ có màu đỏ.
+      function vonglap(number) {
+        for (let i = 1; i < 100; i++) {
+          document.write('<p style = "color:red">' + i + "<p/>");
+          i++;
+          document.write('<p style = "color:blue">' + i + "<p/>");
+        }
+      }
+    </script>
+  </body>
+</html>
