@@ -1,0 +1,22 @@
+.righticon {
+    display: block;
+    width: 180%;
+}
+.row {
+    display: flex;
+    width: 100%;
+    
+
+}
+.leftside {
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 30%;
+    
+}
+.text-search {
+    color: gray;
+    font-size: 80%;
+}

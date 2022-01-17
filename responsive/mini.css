@@ -1,0 +1,61 @@
+.nav-bar {
+display: flex;
+
+}
+.container-fluid {
+    margin-left: 10%;
+}
+.text1 {
+    font-family: "Inconsolata", monospace;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+.text2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-decoration: none;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.row {
+    
+    align-items: center;
+}
+.image1 {
+    width: 100%;
+}
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    color:grey
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    color:grey;
+}
+.image4 {
+    width: 100%;
+}
+p {
+width: 100%;
+}
+.text-signup {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    color: var(--main-color);
+    text-align: center;
+    align-items: center;
+}
+.the-signup {
+    background-color:#f0f0f0;
+    margin-top: 5%;
+    text-align: center;
+}
+.loadmore {
+    margin-left: 45%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
