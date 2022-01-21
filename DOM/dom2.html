@@ -1,0 +1,63 @@
+//const heading = document.getElementById("heading");
+heading.style.color = "red";
+heading.style.textTransform = "uppercase";
+  
+
+//Thay đổi màu chữ của tất cả thẻ có class “para” thành màu “blue” và có font-size = “20px”
+const para = document.getElementsByClassName('para');
+for (let i=0 ; i < para.length; i++) {
+  para[i].style.color = 'blue';
+  para[i].style.fontSize = '20px'
+}
+
+//Thêm thẻ a link đến trang facebook ở đằng trước thẻ có class “para-3”
+      const link = document.createElement("a");
+      link.innerHTML =
+        '<a href="https://www.facebook.com/"> https://www.facebook.com/ </a>';
+      const para3 = document.querySelector(".para-3");
+      document.body.insertBefore(link, para3);
+      
+
+
+
+      //Đếm xem có tất cả bao nhiêu từ trong 2 đoạn văn có độ dài lớn hơn 8
+      const firsttext = document.querySelector('.p1').innerText;
+      //console.log (firsttext);
+      let arr1 =  firsttext.split(' ');
+      //console.log(arr1);
+      let newarr1 = arr1.filter(function(e) {
+        return e.length - 8 > 0
+      })
+      //console.log (newarr1) 
+      console.log (' đoạn p1 có ' + newarr1.length + ' từ dài hơn 8 kí tự')     
+
+
+      //abc
+      const descriptionEl = document.querySelecor('.description')
+      descriptionEl.classList.add("text-bold")
+
+
+
+
+
+      
+//Style cho các từ có độ dài lớn hơn 8 trong p1
+const firsttext = document.querySelector('.p1').innerText;
+let arr1 =  firsttext.split(' ');
+const words = [];
+
+for (i= 0; i < arr1.length; i++) {
+  if(firsttext[i] > 8) {
+    words.push(`<span class="highlight">${arr1[i]}<span/>`)
+  }
+  else {
+    words.push(arr1[i]);
+  }
+}
+console.log(words)
+
+//Câu 1. Tạo 1 thẻ p có id=“text”, có nội dung bất kỳ (có thể tạo bằng HTML hay Javascript - tùy chọn). Yêu cầu
+
+  //Đặt màu văn bản thành #777
+  //Đặt kích thước phông chữ thành 2rem
+  //Đặt nội dung HTML thành Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.
