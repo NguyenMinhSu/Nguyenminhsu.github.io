@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tính chỉ số cân nặng</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Hiển thị background-image tương ứng với chỉ số BMI cho class "image-box" -->
+      <div class="image-box">
+        <div class="result-wrapper">
+          <!-- Khi kiểm tra BMI thì add class "hide" để ẩn phần này đi -->
+          <p class="say-hello text-center">
+            Techmaster Việt Nam <br />
+            Xin chào các bạn !
+          </p>
+
+          <!-- Khi kiểm tra BMI thì remove class "hide" để hiện phần này đi -->
+          <div class="result-container hide">
+            <!-- Hiển thị chỉ số BMI -->
+            <span class="result-num"></span>
+
+            <!-- Hiển thị giới hạn về BMI -->
+            <span class="result-title"></span>
+
+            <!-- Hiển thị thông tin BMI -->
+            <span class="result-content"></span>
+          </div>
+        </div>
+      </div>
+      <div class="content-box">
+        <h3 class="title text-center">Tính chỉ số cơ thể BMI</h3>
+        <div class="intro">
+          <p><strong>Chỉ số BMI là gì?</strong></p>
+          <p>
+            Chỉ số BMI (Body Mass Index) hay còn gọi là chỉ số khối cơ thể, chỉ
+            số thể trọng, là một công cụ thường được sử dụng để đo lượng mỡ
+            trong cơ thể. Chỉ số BMI chuẩn được tính dựa trên chiều cao và cân
+            nặng, áp dụng cho nam và nữ trưởng thành.
+          </p>
+        </div>
+        <div class="input-box">
+          <!-- Nếu validate đúng thì add class "success" -->
+          <!-- Nếu validate sai thì add class "error" -->
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Nhập chiều cao (cm), (nhập số nhé-chữ thì tự tính toán)"
+              id="height"
+              class="height"
+            />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <!-- Nếu validate đúng thì add class "success" -->
+          <!-- Nếu validate sai thì add class "error" -->
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Nhập cân nặng (kg)  (nhập số nhé-chữ thì tự tính toán)"
+              id="weight"
+              class="weight"
+            />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="input">
+            <button class="btn-submit" id="btn-submit">Kiểm tra</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const data = [
+        {
+          title: "Chỉ số BMI dưới 18,5 là thiếu cân",
+          content: "Bạn cần áp dụng chế độ ăn và thể thao để tăng cân.",
+          image:
+            "https://images.unsplash.com/photo-1541306912932-f6bed7f462eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        },
+        {
+          title: "Chỉ số BMI từ 18,5 đến 24,9 là bình thường",
+          content: "Bạn có một cơ thể tốt.",
+          image:
+            "https://images.unsplash.com/photo-1579047440583-43a690fe2243?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        },
+        {
+          title: "Chỉ số BMI ở giữa 25,0 và 29,9 được coi là thừa cân",
+          content:
+            "Tuy nhiên, tình trạng chưa quá trầm trọng nên bạn có thể tìm ngay các phương pháp giảm cân hiệu quả tự nhiên và kết hợp luyện tập. Nếu áp dụng điều độ và kiên trì, chỉ cần tốn khoảng vài tháng là bạn có ngay vóc dáng rất ưng ý rồi đó.",
+          image:
+            "https://images.unsplash.com/photo-1573879541250-58ae8b322b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        },
+        {
+          title: "Chỉ số BMI bằng hoặc trên 30 được xem là béo phì",
+          content:
+            "Với mức cân nặng này, cơ thể của bạn phải gặp rất nhiều áp lực hàng ngày, đặc biệt trọng lượng mỡ tạo áp lực lên cơ xương và các cơ quan làm ảnh hưởng đến sinh hoạt và sức khỏe của bạn.",
+          image:
+            "https://images.unsplash.com/photo-1573879026263-0ae3b9599d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=620&q=80",
+        },
+      ];
+      const inputHeight = document.querySelector("#height");
+      const inputWeight = document.querySelector("#weight");
+      //console.log(inputHeight)
+      //khai báo các biến cần thay đổi
+      const btn = document.querySelector("#btn-submit");
+      const imageBox = document.querySelector(".image-box");
+      const sayhelo = document.querySelector(".say-hello");
+      const resultContainer = document.querySelector(".result-container");
+      const resultNum = document.querySelector(".result-num");
+      const reultContent = document.querySelector(".result-content");
+      const inputHeightBl = document.querySelectorAll(".input-box .input");
+      //console.log(inputHeightBl[0]);
+      const errorText = document.querySelectorAll('.input small')
+      console.log(errorText);
+      btn.addEventListener("click", function () {
+        //b1 lấy value tỏng 2 ô input
+        let inputHeightValue = inputHeight.value / 100;
+        let inputWeightValue = inputWeight.value;
+
+        //kiểm tra input có trống hay không
+        if (inputHeightValue == "") {
+          alert("không được dể chiều cao trống");
+        }
+        if (inputWeightValue == "") {
+          alert("không được dể cân nặng trống");
+        }
+        //b3 tính toán chỉ số
+        let BMI;
+        if (Number(inputHeightValue) && Number(inputWeightValue)) {
+          BMI = inputWeightValue / (inputHeightValue * inputHeightValue);
+        }
+        sayhelo.classList.add("hide");
+        resultContainer.classList.remove("hide");
+
+        if (BMI < 18.5) {
+          //console.log(imageBox);
+          imageBox.style.backgroundImage = `url(${data[0].image})`;
+          resultNum.innerText = data[0].title;
+          reultContent.innerText = data[0].content;
+        } else if (18.5 < BMI && BMI < 24.5) {
+          imageBox.style.backgroundImage = `url(${data[1].image})`;
+          resultNum.innerText = data[1].title;
+          reultContent.innerText = data[1].content;
+        } else if (25 <= BMI && BMI <= 29.9) {
+          imageBox.style.backgroundImage = `url(${data[2].image})`;
+          resultNum.innerText = data[2].title;
+          reultContent.innerText = data[2].content;
+        } else {
+          imageBox.style.backgroundImage = `url(${data[3].image})`;
+          resultNum.innerText = data[3].title;
+          reultContent.innerText = data[3].content;
+        }
+
+        if (isNaN(inputHeightValue) == true) {
+          inputHeightBl[0].classList.add("error");
+          errorText[0].innerText = "chiều cao phải là 1 số"
+        }else {
+          inputHeightBl[0].classList.add("success");
+        }
+
+         if (isNaN(inputWeightValue) == true) {
+          inputHeightBl[1].classList.add("error");
+          errorText[1].innerText = "Cân nặng phải là 1 số"
+         }else {
+          inputHeightBl[1].classList.add("success");
+         }
+
+
+
+
+      });
+    </script>
+  </body>
+</html>

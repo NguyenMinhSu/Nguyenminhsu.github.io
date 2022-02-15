@@ -1,0 +1,42 @@
+// Render số box = số lượng màu ra ngoài màn hình bằng javascript (5 box)
+// Box được tạo bởi thẻ div, có class=“box”, background tương ứng với từng mã màu
+// Cập nhật số lượng total box trong thẻ <span> có class “points”
+// Khi bấm vào box bất kỳ thì box đó biến mất, đồng thời số lượng total box giảm đi 1
+// Khi click vào nút “more box” thì số lượng box tăng lên 5 (tương ứng với 5 màu trong mảng colors), đồng thời số lượng total box cũng tăng lên 5
+
+let colors = ["#3498db", "#9b59b6", "#e74c3c", "#2c3e50", "#d35400"];
+//gọi các input để xử lý
+const boxes = document.querySelector(".boxes");
+const count = document.querySelector(".points");
+const moreBoxes = document.querySelector("#btn");
+// tạo biến cộng trừ để tính số box hiển thị
+let addedBoxes = 0;
+let deletedBoxes = 0;
+// vòng lặp tạo 5 box
+function create5Boxes() {
+  for (let i = 0; i < 5; i++) {
+  //tăng 1 box
+    addedBoxes++;
+    let box = document.createElement("div");
+    box.classList.add("box");
+    box.style.backgroundColor = colors[i];
+//mỗi box mới tạo có 1 event ấn vào là xóa
+    box.addEventListener("click", function () {
+      box.remove();
+//khi ấn vào 1 box sẽ giảm số box đếm xuống 1
+      deletedBoxes++;
+      //cập nhận hiẻn thị số box
+      count.innerText = addedBoxes - deletedBoxes;
+    });
+//hiển thị box mới tạo vào cuối
+    boxes.insertAdjacentElement("beforeend", box);
+  }
+//cập nhập hiển thị số box
+  count.innerText = addedBoxes - deletedBoxes;
+}
+//tạo 5 box đầu
+create5Boxes();
+//ấn vào "More boxes" để tạo 5 box
+moreBoxes.addEventListener("click", create5Boxes);
+//có 2 đoạn   count.innerText = addedBoxes - deletedBoxes sau khi tăng hoặc giảm 1 box để cập nhật số lượng box hiển thị
+
