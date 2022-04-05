@@ -1,0 +1,201 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  height: 1980px;
+
+  width: 760px;
+  padding: 0px 0px;
+}
+
+.part1 {
+  height: 434px;
+  background-image: url(./img/Mask.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.manu {
+  display: flex;
+}
+.manu1 {
+  display: flex;
+  width: 20%;
+  justify-content: flex-end;
+  margin-top: 3%;
+}
+.manu2 {
+  display: flex;
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  margin-top: 3%;
+  margin-left: 20%;
+}
+.btn1-manu {
+  background-color: rgb(26, 224, 26);
+  width: 20%;
+  height: 60%;
+  border-radius: 20%;
+  margin-top: 5%;
+  border-width: 0;
+}
+.text1-manu {
+  font-weight: 200;
+  font-size: 12px;
+  margin-top: 4%;
+}
+.manu2 {
+  font-weight: 200;
+  font-size: 8px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+  margin-right: 18%;
+}
+.text-dowload {
+  display: flex;
+}
+.btn2-manu {
+  background-color: rgb(12, 235, 12);
+  border-radius: 25%;
+  border-width: 0;
+}
+
+.btn2-manu:hover {
+  color: red;
+  background-color: white;
+  text-decoration:underline
+}
+
+
+.row1 {
+  margin: 0px;
+}
+
+.img1 {
+  margin: 20% 33%;
+  height: 250px;
+  background-color: whitesmoke;
+  border-radius: 12%;
+}
+.img1-a {
+  height: 94%;
+  margin: 8% 4%;
+}
+.img2 {
+  margin-top: -100%;
+  margin-left: 50%;
+  height: 250px;
+}
+.img2-a {
+  height: 94%;
+  border-radius: 11%;
+}
+.text-right1 {
+  margin-top: 30%;
+  font-weight: 100;
+  font-size: 18px;
+}
+.text-right2 {
+  font-weight: 100;
+  font-size: 18px;
+}
+.text-right3 {
+  font-weight: 100;
+  font-size: 9px;
+  color: rgb(212, 208, 208);
+  width: 70%;
+}
+
+.text-manu:hover{
+  text-decoration: underline;
+}
+
+.muiten-img:hover{
+  text-decoration: underline;
+}
+.text-rightLast{
+  display: flex;
+}
+.Circle{
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 4%;
+  color: red;
+  
+}
+.btn-downApp{
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  background-color:rgb(34, 158, 34);
+  border-radius: 15% 15%;
+  border-width: 0;
+  font-size: 8px;
+  color: white;
+}
+.btn-downApp:hover{
+  
+  
+  border-color: blue;
+  background-color: white;
+  text-decoration: underline;
+  color: black;
+}
+
+.text-right4{
+  font-size: 8px;
+  margin-top: 2.5%;
+  margin-left: 2%;
+}
+
+.part2{
+  margin-top: 8%;
+  text-align: center;
+}
+
+
+.part3 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.part3-1{
+width: 32%;
+background-color: white;
+}
+.part3-2{
+  width: 32%;
+  background-color: white;
+}
+.part3-3{
+  width: 32%;
+  background-color: white;
+}
+.doanvan-part3{
+  font-size: 10px;
+  color: gray;
+}
+.part4{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 100px;
+}
+.part4-a{
+  width: 30%;
+}
+.part4-b{
+  width: 30%;
+}
+.part4-c{
+  width: 30%;
+}
+.part4-a2{
+  margin-top: 50px;
+}

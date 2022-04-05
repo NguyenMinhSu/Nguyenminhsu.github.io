@@ -1,0 +1,297 @@
+.part-1 {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right, rgb(236, 218, 195), white);
+  display: flex;
+  align-items: center;
+}
+.manu-1 {
+  height: 60%;
+}
+.part1-item {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.branch {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.text-branch {
+  font-size: 200%;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+
+  margin-left: 10%;
+}
+.sanpham {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.text-sanpham {
+  font-size: 130%;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  margin-top: 5%;
+}
+.muiten-manu {
+  margin-top: 60%;
+}
+.text-sanpham:hover {
+  color: red;
+}
+.input-search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.input-search1 {
+  width: 100%;
+}
+.image-top {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  background-image: url(./imgs/Su-user.png);
+  background-size: 100%;
+
+  margin-top: 25%;
+}
+.traitim {
+  width: 6%;
+}
+.traitim-img {
+  margin-top: 20%;
+  margin-left: 50%;
+}
+.giohang {
+  width: 10%;
+}
+.giohang-img {
+  margin-top: 12%;
+}
+
+
+.part1-bacham {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  margin-right: 33%;
+  margin-top: 4%;
+}
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.arrow-left {
+  width: 40px;
+  height: 40px;
+  margin-right: 1%;
+  margin-top: 2%;
+}
+.part1-img {
+  margin-top: 2%;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.part1-img1 {
+  width: 24%;
+  max-height: 450px;
+  overflow: hidden;
+}
+.part1-img2 {
+  width: 65%;
+  max-height: 450px;
+  overflow: hidden;
+}
+.part1-img3 {
+  width: 5%;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.part-2 {
+  height: 800px;
+  background-image: url(./imgs/backgroundimagepart2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 5%;
+  border-top-width: 2%;
+  
+}
+
+.text-part2 {
+  margin-left: 5%;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+.text-tpcn {
+  font-size: 160%;
+  font-weight: 500;
+  width: 100%;
+}
+.product-form {
+  max-width: 80%;
+  margin-left: 10%;
+
+  margin-top: 3%;
+}
+.productList-part2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.product {
+  width: 22%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-img {
+  height: 70%;
+  width: 100%;
+}
+.product-img1 {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.product-text1 {
+  color: blue;
+  font-size: 120%;
+  font-weight: 400;
+}
+.product-text2 {
+  color: gray;
+  font-size: 70%;
+}
+.product-text3 {
+  color: red;
+  font-size: 100%;
+}
+.btn-xemthem {
+  display: flex;
+  justify-content: center;
+}
+
+.part-3 {
+  background-color: white;
+  width: 100%;
+}
+.part3-1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 160%;
+  font-weight: 500;
+}
+.part3-2 {
+  
+  width: 100%;
+ 
+}
+.part3-img {
+  width: 98%;
+  margin-right: 3%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.part3-img1 {
+  width: 30%;
+  height: 200px;
+  margin-left: 2.5%;
+  background-color: rgb(253, 242, 227);
+  border-radius: 6%;
+}
+.part3-img1a {
+  height: 80%;
+  overflow: hidden;
+}
+.part3-img1text {
+  height: 20%;
+}
+.part3-imgchitiet {
+  width: 100%;
+  min-height: 100%;
+  border-top-left-radius: 8%;
+  border-top-right-radius: 8%;
+}
+.arrow-left {
+  width: 5%;
+  margin-left: 45%;
+}
+.arrow-right {
+  width: 5%;
+}
+.part3-img1text {
+  font-size: small;
+  font-weight: 500;
+  overflow: hidden;
+}
+.part3-3 .part1-bacham {
+  margin-right: 1%;
+  width: 100%;
+}
+.part3-3 {
+  text-align: center;
+}
+.part3-btnSlider {
+  display: flex;
+  width: 100%;
+  align-content: center;
+}
+.part-4 {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 200px;
+  margin-left: 9%;
+  margin-right: 11%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(211, 207, 207);
+  border-left: hidden;
+  border-right: hidden;
+}
+.part4-cl1 {
+  width: 23%;
+}
+.part4-text1a {
+  width: 100%;
+  height: 20%;
+  margin-top: 10%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.part4-text1b {
+  width: 100%;
+  font-size: 14px;
+  color: grey;
+}
+.part4-text1bc {
+  width: 100%;
+  display: flex;
+}
+.btn-sendEmail {
+  background-color: rgb(241, 189, 124);
+  width: 20%;
+  position: relative;
+}
+.form-email {
+  width: 80%;
+}

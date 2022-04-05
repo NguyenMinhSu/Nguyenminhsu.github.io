@@ -1,0 +1,315 @@
+.part-1 {
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(to right, rgb(236, 218, 195), white);
+  display: flex;
+  align-items: center;
+}
+.manu-1 {
+  height: 60%;
+}
+.part1-item {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+.branch {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.text-branch {
+  font-size: 200%;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+
+  margin-left: 10%;
+}
+.sanpham {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.text-sanpham {
+  font-size: 130%;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  margin-top: 5%;
+}
+.muiten-manu {
+  margin-top: 60%;
+}
+.text-sanpham:hover {
+  color: red;
+}
+.input-search {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.input-search1 {
+  width: 100%;
+}
+.image-top {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  background-image: url(./imgs/Su-user.png);
+  background-size: 100%;
+
+  margin-top: 25%;
+}
+.traitim {
+  width: 6%;
+}
+.traitim-img {
+  margin-top: 20%;
+  margin-left: 50%;
+}
+.giohang {
+  width: 10%;
+}
+.giohang-img {
+  margin-top: 12%;
+}
+.part2-textvietphat {
+  font-size: 15px;
+  font-weight: 400;
+}
+.part2-textsanpham {
+  font-size: 15px;
+  font-weight: 400;
+}
+.part2-textsanphamdt {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(180, 105, 105);
+}
+.part2-tieude {
+  margin-top: 2%;
+  margin-left: 10%;
+}
+.part2-formmain {
+  width: 80%;
+  background-color: bisque;
+  height: 300px;
+  margin-left: 10%;
+  display: flex;
+}
+.part2-formImg {
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+}
+.part2-formInf {
+  width: 60%;
+  background-color: rgb(246, 251, 255);
+}
+.formInf-name {
+  width: 100%;
+  height: 20%;
+  display: block;
+}
+.formInf-size {
+  width: 100%;
+  height: 60%;
+  margin-top: 2%;
+  border: 1px solid;
+  border-color: gray;
+  border-bottom: hidden;
+  border-left: hidden;
+  border-right: hidden;
+}
+.formInf-btnthemhang {
+  width: 100%;
+  height: 20%;
+}
+.text-productDetail {
+  font-size: 120%;
+  font-style: normal;
+  color: black;
+  font-weight: 500;
+  height: 60%;
+  overflow: hidden;
+}
+.rate {
+  height: 40%;
+  width: 50%;
+  display: flex;
+}
+.size {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.btn-rate {
+  border-width: 0%;
+  border-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+}
+.size1 {
+  width: 15%;
+}
+.hop30v {
+  border: 1px solid;
+  font-size: 100%;
+}
+.hop60v {
+  margin-left: 5%;
+  border: 1px solid;
+}
+.hop100v {
+  margin-left: 5%;
+  border: 1px solid;
+}
+.price {
+  display: flex;
+}
+.text-gia {
+  width: 15%;
+}
+.value {
+  color: red;
+  margin-right: 5%;
+}
+.amount {
+  display: flex;
+  height: 30%;
+  align-items: center;
+}
+.btn-sub {
+  width: 33%;
+  border-color: rgb(255, 255, 255);
+}
+.number {
+  width: 33%;
+
+  align-items: center;
+}
+.btn-add {
+  width: 33%;
+  border-color: rgb(255, 255, 255);
+}
+.btn-themhang {
+  border-color: rgb(255, 255, 255);
+  background-color: red;
+  color: white;
+}
+.formInf-btnthemhang {
+  margin-left: 2%;
+}
+.tanggiam {
+  display: flex;
+  width: 15%;
+  text-align: center;
+}
+.part-3 {
+  width: 80%;
+  height: 150px;
+  margin: 4% 10%;
+  background-color: white;
+  overflow: hidden;
+}
+.part4-comment {
+  width: 80%;
+  height: 400px;
+  margin-left: 10%;
+  background-color:white;
+}
+.part4-commentUsername1 {
+  width: 96%;
+  margin-left: 2%;
+  height: 30%;
+  border: 1px solid;
+}
+.part4-commentTextbinhluan {
+  width: 100%;
+  height: 10%;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.part4-commentUsername1a {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.part4-commentUsername2 {
+  width: 96%;
+  margin-left: 2%;
+  height: 30%;
+  border: 1px solid;
+  margin-top: 1%;
+}
+.part4-mycomment {
+  width: 96%;
+  height: 14%;
+  margin-left: 2%;
+  margin-top: 1%;
+  border: 1px solid;
+}
+.lorem {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+.input-mycomment {
+  width: 100%;
+  height: 100%;
+}
+.btn-guidi {
+  width: 98%;
+  text-align:end;
+  border-color: white;
+  margin-top: 0.5%;
+  
+}
+.part-5 {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 200px;
+  margin-left: 9%;
+  margin-right: 11%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(211, 207, 207);
+  border-left: hidden;
+  border-right: hidden;
+}
+.part4-cl1 {
+  width: 23%;
+}
+.part4-text1a {
+  width: 100%;
+  height: 20%;
+  margin-top: 10%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.part4-text1b {
+  width: 100%;
+  font-size: 14px;
+  color: grey;
+}
+.part4-text1bc {
+  width: 100%;
+  display: flex;
+}
+.btn-sendEmail {
+  background-color: rgb(241, 189, 124);
+  width: 20%;
+  position: relative;
+}
+.form-email {
+  width: 80%;
+}

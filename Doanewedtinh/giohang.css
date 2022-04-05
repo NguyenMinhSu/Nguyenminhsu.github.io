@@ -1,0 +1,133 @@
+
+.part-1 {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(236, 218, 195), white);
+    display: flex;
+    align-items: center;
+  }
+  .manu-1 {
+    height: 60%;
+  }
+  .part1-item {
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .branch {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .text-branch {
+    font-size: 200%;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+  
+    margin-left: 10%;
+  }
+  .sanpham {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .text-sanpham {
+    font-size: 130%;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    margin-top: 5%;
+  }
+  .muiten-manu {
+    margin-top: 60%;
+  }
+  .text-sanpham:hover {
+    color: red;
+  }
+  .input-search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .input-search1 {
+    width: 100%;
+  }
+  .image-top {
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-image: url(./imgs/Su-user.png);
+    background-size: 100%;
+  
+    margin-top: 25%;
+  }
+  .traitim {
+    width: 6%;
+  }
+  .traitim-img {
+    margin-top: 20%;
+    margin-left: 50%;
+  }
+  .giohang {
+    width: 10%;
+  }
+  .giohang-img {
+    margin-top: 12%;
+  }
+  
+  
+  .part1-bacham {
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    margin-right: 33%;
+    margin-top: 4%;
+  }
+  .arrow-right {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    margin-top: 2%;
+  }
+  .arrow-left {
+    width: 40px;
+    height: 40px;
+    margin-right: 1%;
+    margin-top: 2%;
+  }
+  
+  .part1-img {
+    margin-top: 2%;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  .part1-img1 {
+    width: 24%;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .part1-img2 {
+    width: 65%;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .part1-img3 {
+    width: 5%;
+    max-height: 450px;
+    overflow: hidden;
+  }
+  .part-2 {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+      background-color: rgb(215, 235, 235);
+  }
+  
+  
