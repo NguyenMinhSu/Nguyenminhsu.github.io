@@ -10,6 +10,7 @@
   }
   .part1-item {
     width: 100%;
+    max-height: 50px;
     display: flex;
     text-align: center;
   }
@@ -51,6 +52,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    margin-left: 5%;
   }
   .input-search1 {
     width: 100%;
@@ -62,6 +64,7 @@
     border-radius: 50%;
     background-image: url(./imgs/Su-user.png);
     background-size: 100%;
+    
   
     margin-top: 25%;
   }
@@ -74,36 +77,132 @@
   }
   .giohang {
     width: 10%;
+    margin-left: 10%;
   }
   .giohang-img {
     margin-top: 12%;
   }
   
-  
-  .part1-bacham {
+.text-thanhtoan {
+  color:rgb(160, 150, 150);
+}  
+.part-4 {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  height: 200px;
+  margin-left: 9%;
+  margin-right: 11%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(211, 207, 207);
+  border-left: hidden;
+  border-right: hidden;
+}
+.part4-cl1 {
+  width: 23%;
+}
+.part4-text1a {
+  width: 100%;
+  height: 20%;
+  margin-top: 10%;
+  font-size: 24px;
+  font-weight: 500;
+}
+.part4-text1b {
+  width: 100%;
+  font-size: 14px;
+  color: grey;
+}
+.part4-text1bc {
+  width: 100%;
+  display: flex;
+}
+.btn-sendEmail {
+  background-color: rgb(241, 189, 124);
+  width: 20%;
+  position: relative;
+  border-color: white;
+  border-radius: 10px;
+}
+.form-email {
+  width: 80%;
+}
+.container-2 {
+  width: 80%;
+  height: 80%;
+  margin: 3% 10%;
+}
+.tieude {
+  width: 100%;
+  height: 10%;
+}
+.text-tieude {
+  height: 100%;
+  width: 100%;
+  font-size: 160%;
+  font-weight: 500;
+  text-align: center;
+}
+.email {
+  width: 100%;
+  height: 15%;
+}
+.btn-input {
+  width: 90%;
+  height: 45%;
+  font-size: 80%;
+  font-style: italic;
+}
+.text-saiemail {
+  font-size: 90%;
+  color: red;
+  font-style: italic;
+}
+.matkhau {
+  width: 100%;
+  height: 15%;
+}
+
+.text-quenmatkhau {
+  font-size: 90%;
+  margin-right: 10%;
+  margin-top: 0;
+}
+.dangnhap {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  margin-top: 10%;
+}
+.btn-dangnhap {
+  width: 55%;
+  height: 80%;
+  background-color: red;
+  color: white;
+  border-color: white;
+}
+.text-last {
+  font-size: 100%;
+  text-align: center;
+}
+.dangnhapvoi {
+    text-align: center;
+}
+.dangnhapvoi-img {
     display: flex;
     justify-content: space-around;
+    margin-top: 7%;
+    width: 60%;
+    margin-left: 20%;
+}
+.dangnhapvoi-img1 {
     width: 10%;
-    margin-right: 33%;
-    margin-top: 4%;
-  }
-  .arrow-right {
-    width: 40px;
-    height: 40px;
-    margin-right: 5%;
-    margin-top: 2%;
-  }
-  .arrow-left {
-    width: 40px;
-    height: 40px;
-    margin-right: 1%;
-    margin-top: 2%;
-  }
-  .part1-img {
-    margin-top: 2%;
-    width: 100%;
-  
-    display: flex;
-    justify-content: space-between;
-  }
-  
+}
+.text-dangnhapvoi {
+    font-size: 90%;
+    color: rgb(138, 126, 126);
+}
+.text-thôngtinthanhtoan {
+  font-size: 150%;
+}

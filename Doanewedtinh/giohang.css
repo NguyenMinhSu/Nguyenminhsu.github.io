@@ -1,59 +1,26 @@
 .part-1 {
-  width: 100%;
+  align-items: center;
+  text-align: center;
   height: 100px;
   background-image: linear-gradient(to right, rgb(236, 218, 195), white);
-  display: flex;
-  align-items: center;
 }
-.manu-1 {
-  height: 60%;
-}
-.part1-item {
+.btn-search {
   width: 100%;
-  display: flex;
-  text-align: center;
+  border-radius: 20px;
+  border: 0px solid;
 }
-.branch {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.text-branch {
-  font-size: 200%;
+.text-vietphat {
+  font-size: 180%;
   font-weight: 700;
-  text-decoration: none;
   color: black;
-
-  margin-left: 10%;
-}
-.sanpham {
-  width: 15%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  text-decoration: none;
 }
 .text-sanpham {
-  font-size: 130%;
-  font-weight: 500;
-  color: black;
-  text-decoration: none;
-  margin-top: 5%;
-}
-.muiten-manu {
-  margin-top: 60%;
-}
-.text-sanpham:hover {
-  color: red;
-}
-.input-search {
-  width: 40%;
   display: flex;
-  align-items: center;
-  text-align: center;
-}
-.input-search1 {
-  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 110%;
+  font-weight: 500;
 }
 .image-top {
   width: 40px;
@@ -62,23 +29,13 @@
   border-radius: 50%;
   background-image: url(./imgs/Su-user.png);
   background-size: 100%;
-
-  margin-top: 25%;
 }
-.traitim {
-  width: 6%;
-}
-.traitim-img {
-  margin-top: 20%;
-  margin-left: 50%;
+.image-top1 {
+  text-align: center;
 }
 .giohang {
-  width: 10%;
+  text-align: end;
 }
-.giohang-img {
-  margin-top: 12%;
-}
-
 .part-2 {
   width: 60%;
   height: 400px;

@@ -1,0 +1,88 @@
+.part-1 {
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-image: linear-gradient(to right, rgb(236, 218, 195), white);
+  }
+  .btn-search {
+    width: 100%;
+    border-radius: 20px;
+    border: 0px solid;
+  }
+  .text-vietphat {
+    font-size: 180%;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+  }
+  .text-sanpham {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+    font-weight: 500;
+  }
+  .image-top {
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-image: url(./imgs/Su-user.png);
+    background-size: 100%;
+  }
+  .image-top1 {
+    text-align: center;
+  }
+  .giohang {
+    text-align: end;
+  }
+  .part-4 {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 200px;
+    margin-left: 9%;
+    margin-right: 11%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(211, 207, 207);
+    border-left: hidden;
+    border-right: hidden;
+  }
+  .part4-cl1 {
+    width: 23%;
+  }
+  .part4-text1a {
+    width: 100%;
+    height: 20%;
+    margin-top: 10%;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .part4-text1b {
+    width: 100%;
+    font-size: 14px;
+    color: grey;
+  }
+  .part4-text1bc {
+    width: 100%;
+    display: flex;
+  }
+  .btn-sendEmail {
+    background-color: rgb(241, 189, 124);
+    width: 20%;
+    position: relative;
+  }
+  .form-email {
+    width: 80%;
+  }
+.img-vochong {
+    width: 100%;
+    text-align: center;
+}
+.btn-xemsanpham {
+    background-color:red;
+    color: white;
+    border-radius: 10px;
+    border: 0px solid;
+}

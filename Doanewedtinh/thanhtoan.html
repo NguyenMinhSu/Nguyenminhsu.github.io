@@ -12,9 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./thantoan.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <div class="container-all">
+    <div class="container-flui">
       <div class="part-1">
         <div class="part1-item">
           <div class="branch">
@@ -33,13 +39,7 @@
           <div class="input-search">
             <input class="input-search1" type="text" placeholder="Search" />
           </div>
-          <div class="traitim">
-            <img
-              class="traitim-img"
-              src="./imgs/traitim.png"
-              alt="anh trai tim"
-            />
-          </div>
+
           <div class="giohang">
             <a href="./giohang.html">
               <img
@@ -52,8 +52,98 @@
           <a href="./dangnhap.html"><div class="image-top"></div></a>
         </div>
       </div>
-      <div>Việt Phát/Thanh toán</div>
-     
+      <div>Việt Phát/<span class="text-thanhtoan">Thanh toán</span></div>
+      <div class="container-2">
+        <div class="text-thôngtinthanhtoan">Thông tin thanh toán</div>
+        <div class="email">
+          <div>Họ và tên *</div>
+          <input class="btn-input" type="text" placeholder="Nhập Tên người nhận" />
+          <div class="text-saiemail">Không được bỏ trông..</div>
+        </div>
+        <div class="matkhau">
+          <div>Địa chỉ *</div>
+          <input class="btn-input" type="text" placeholder="Nhập địa chỉ" />
+          <div class="text-saiemail">Không được để trống..</div>
+        </div>
+        <div class="matkhau">
+          <div>Số điện thoại *</div>
+          <input class="btn-input" type="text" placeholder="Nhập mật khẩu" />
+          <div class="text-saiemail">Không được để trống..</div>
+        </div>
+        <div class="matkhau">
+          <div style="font-size: 80%;margin-top: 3%;">Tổng đơn hàng : <span>860.000</span>đ</div>
+          
+          
+        </div>
+        <div class="matkhau">
+          <div style="font-size: 80%;">Phí ship : <span>30.000</span>đ</div>
+          
+          
+        </div>
+        <div class="matkhau">
+          <div>Ghi chú *</div>
+          <input class="btn-input" type="text" placeholder="Nhập ghi chú" />
+          
+        </div>
+        
+        
+        
+        <div class="dangnhap">
+          <button class="btn-dangnhap">Xác nhận đặt hàng</button>
+        </div>
+        
+        <div class="chuacotaikhoan">
+          <p class="text-last">
+            Bạn chưa có tài khoản? <a href="./formdangki.html">Đăng kí ngay</a>
+          </p>
+        </div>
+      </div>
+      <div class="part-4">
+        <div class="part4-cl1">
+          <div class="part4-text1a">Việt Phát</div>
+          <div class="part4-text1b">20a Hạ Đình,Thanh Xuân,Hà Nội</div>
+          <div class="part4-text1b">0972107926</div>
+          <div class="part4-text1b">www.vietphat.com</div>
+          <div class="part4-text1b"></div>
+        </div>
+        <div class="part4-cl1">
+          <div class="part4-text1a">Manu</div>
+          <div class="part4-text1b">Thuốc bổ phổi</div>
+          <div class="part4-text1b">Thuốc bổ não</div>
+          <div class="part4-text1b">Thuốc bổ gan</div>
+          <div class="part4-text1b">Calci</div>
+        </div>
+        <div class="part4-cl1">
+          <div class="part4-text1a">Cộng đồng</div>
+          <div class="part4-text1b">Facebook</div>
+          <div class="part4-text1b">Instagram</div>
+          <div class="part4-text1b">Zalo</div>
+          <div class="part4-text1b">Tiktok</div>
+        </div>
+        <div class="part4-cl1">
+          <div class="part4-text1a">Phản hồi</div>
+          <div class="part4-text1b part4-text1bc">
+            <input class="form-email" type="text" placeholder="Send email us" />
+            <button class="btn-sendEmail">
+              <img
+                style="max-width: 100%; max-height: 100%"
+                src="./imgs/muitensendemail.png"
+                alt="mũi tên send email"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+  
     </div>
+    
+   
+
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

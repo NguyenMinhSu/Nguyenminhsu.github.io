@@ -14,42 +14,33 @@
     <link rel="stylesheet" href="./trangchitietsanpham.css" />
   </head>
   <body>
-    <div class="container-all">
-      <div class="part-1">
-        <div class="part1-item">
-          <div class="branch">
-            <a class="text-branch" href="trangchu.html">Việt Phát</a>
+    <div class="container-flui">
+      <div class="part-1 row">
+        <div class="col-xl-2">
+          <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
+        </div>
+        <div class="col-xl-2 text-sanpham">
+          <div>
+            <a class="text-sanpham" href="./tatcasanpham.html">Sản phẩm</a>
           </div>
-          <div class="sanpham">
-            <a class="text-sanpham" href="#">Sản phẩm</a>
-            <a href="#">
-              <img
-                class="muiten-manu"
-                src="./imgs/Arrow-down.png"
-                alt="mũi tên xổ ô manu sản phẩm"
-              />
-            </a>
-          </div>
-          <div class="input-search">
-            <input class="input-search1" type="text" placeholder="Search" />
-          </div>
-          <div class="traitim">
+          <a href="./tatcasanpham.html">
             <img
-              class="traitim-img"
-              src="./imgs/traitim.png"
-              alt="anh trai tim"
+              class="muiten-manu"
+              src="./imgs/Arrow-down.png"
+              alt="mũi tên xổ ô manu sản phẩm"
             />
-          </div>
-          <div class="giohang">
-            <a href="#">
-              <img
-                class="giohang-img"
-                src="./imgs/giohang.png"
-                alt="giỏ hàng"
-              />
-            </a>
-          </div>
-          <a href="#"><div class="image-top"></div></a>
+          </a>
+        </div>
+        <div class="col-xl-5">
+          <input class="btn-search" type="text" placeholder="tìm kiếm" />
+        </div>
+        <div class="col-xl-2 giohang">
+          <a href="./giohang.html">
+            <img class="giohang-img" src="./imgs/giohang.png" alt="giỏ hàng" />
+          </a>
+        </div>
+        <div class="col-xl-1">
+          <div class="image-top"></div>
         </div>
       </div>
       <div class="part-2">
@@ -72,7 +63,7 @@
                 Hoạt huyết dưỡng não Lazine Extra
               </div>
               <div class="rate">
-                <button class="btn-rate">Rate</button>
+                
                 <div style="margin-left: 40%">
                   <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
                 </div>
@@ -113,7 +104,9 @@
               </div>
             </div>
             <div class="formInf-btnthemhang">
-              <button class="btn-themhang">Thêm vào giỏ hàng +</button>
+              <a href="./giohang.html"
+                ><button class="btn-themhang">+Thêm vào giỏ hàng</button></a
+              >
             </div>
           </div>
         </div>
@@ -216,7 +209,9 @@
             />
           </div>
           <div class="btn-guidi">
-            <button style="background-color: rgb(230, 5, 5);color: white;">Gửi</button>
+            <button style="background-color: rgb(230, 5, 5); color: white">
+              Gửi
+            </button>
           </div>
         </div>
       </div>
@@ -257,5 +252,10 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
