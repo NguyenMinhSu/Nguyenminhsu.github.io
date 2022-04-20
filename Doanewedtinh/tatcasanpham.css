@@ -42,12 +42,12 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin-top: 5%;
-  border-top-width: 2%;
-  overflow:scroll;
+  border-top-width: 3%;
+  
 }
 .list-sanpham1 {
    text-align: center;
-   padding: 5%;
+   padding: 2%;
 }
 .Text-tatcasanpham {
     font-size: 120%;

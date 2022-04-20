@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form đăng nhập</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
     <style>
       body {
         margin: 0;
@@ -68,32 +69,38 @@
         margin-top: 10%;
       }
       .btn-dangnhap {
-        width: 55%;
-        height: 80%;
+        width: 70%;
+        height: 30px;
         background-color: red;
         color: white;
-        border-color: white;
+        border-color: none;
+        border-radius: 10px;
       }
       .text-last {
         font-size: 100%;
         text-align: center;
       }
       .dangnhapvoi {
-          text-align: center;
+        text-align: center;
       }
       .dangnhapvoi-img {
-          display: flex;
-          justify-content: space-around;
-          margin-top: 7%;
-          width: 60%;
-          margin-left: 20%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 7%;
+        width: 60%;
+        margin-left: 20%;
       }
       .dangnhapvoi-img1 {
-          width: 10%;
+        width: 10%;
       }
       .text-dangnhapvoi {
-          font-size: 90%;
-          color: rgb(138, 126, 126);
+        font-size: 90%;
+        color: black;
+      }
+      body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7RLYuxVfa4_kOIj5GdTQo4p3TZuO2hOa1A&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
   </head>
@@ -104,7 +111,7 @@
           <div class="text-tieude">Đăng nhập</div>
         </div>
         <div class="email">
-          <div>Email *</div>
+          <div>Email hoặc SĐT *</div>
           <input class="btn-input" type="text" placeholder="Nhập email" />
           <div class="text-saiemail">Sai email..</div>
         </div>
@@ -114,18 +121,32 @@
           <div class="text-saiemail">Sai mật khẩu..</div>
         </div>
         <div class="quenmatkhau">
-          <a href="./laylaimatkhau.html"><p class="text-quenmatkhau">Quên mật khẩu?</p></a>
+          <a href="./laylaimatkhau.html"
+            ><p class="text-quenmatkhau">Quên mật khẩu?</p></a
+          >
         </div>
         <div class="dangnhap">
           <button class="btn-dangnhap">Đăng nhập</button>
         </div>
         <div class="dangnhapvoi">
-           <div class="text-dangnhapvoi">Hoặc đăng nhập với</div>
-           <div class="dangnhapvoi-img">
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;max-height:100%" src="./imgs/bieutuongfacebook.png" alt="fb"></div>
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;height:100%" src="./imgs/bieutuongzalo.png" alt="zl"></div>
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;max-height:100%" src="./imgs/bieutuonggoogle.jpeg" alt="G+"></div>
-           </div>
+          <div class="text-dangnhapvoi">Hoặc đăng nhập với</div>
+          <div class="dangnhapvoi-img">
+            <i class="fa-brands fa-facebook"></i>
+            <div class="dangnhapvoi-img1">
+              <img
+                style="max-width: 100%; height: 100%"
+                src="./imgs/bieutuongzalo.png"
+                alt="zl"
+              />
+            </div>
+            <div class="dangnhapvoi-img1">
+              <img
+                style="max-width: 100%; max-height: 100%"
+                src="./imgs/bieutuonggoogle.jpeg"
+                alt="G+"
+              />
+            </div>
+          </div>
         </div>
         <div class="chuacotaikhoan">
           <p class="text-last">

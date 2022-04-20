@@ -1,7 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .part-1 {
   align-items: center;
   text-align: center;
   height: 100px;
+  max-width: 100%;
   background-image: linear-gradient(to right, rgb(236, 218, 195), white);
 }
 .btn-search {
@@ -10,7 +17,7 @@
   border: 0px solid;
 }
 .text-vietphat {
-  font-size: 180%;
+  font-size: 2rem;
   font-weight: 700;
   color: black;
   text-decoration: none;
@@ -41,9 +48,8 @@
   background-image: url(./imgs/backgroundimagepart2.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  margin-top: 5%;
+  margin-top: 1%;
   border-top-width: 2%;
-  
 }
 
 .text-part2 {
@@ -100,12 +106,11 @@
 .btn-xemthem {
   display: flex;
   justify-content: center;
-  
-
+  margin-top: 50px;
 }
 .part-3 {
-  
   height: 200px;
+  max-width: 100%;
   margin-top: 4%;
   align-items: center;
   text-align: center;
@@ -116,7 +121,6 @@
   border-radius: 50%;
   background-color: bisque;
   color: black;
-  
 }
 .btn-arowright {
   width: 40px;
@@ -124,7 +128,6 @@
   border-radius: 50%;
   background-color: bisque;
   color: black;
-  
 }
 .thongtin-trai {
   padding: 0;
@@ -138,16 +141,11 @@
   width: 100%;
   height: 20%;
   color: black;
-  
 }
 .thongtin-giua {
   height: 100%;
   padding: 0% 4%;
 }
-
-
-
-
 
 .part-4 {
   background-color: rgb(255, 255, 255);
@@ -185,7 +183,20 @@
   background-color: rgb(241, 189, 124);
   width: 20%;
   position: relative;
+  border-radius: 4px;
+  border: 0px solid;
+  margin-left: 1%;
 }
 .form-email {
   width: 80%;
+}
+
+.image {
+  width: 80%;
+  height: 300px;
+  margin-left: 10%;
+}
+.image img {
+  width: 100%;
+  height:100%;
 }
