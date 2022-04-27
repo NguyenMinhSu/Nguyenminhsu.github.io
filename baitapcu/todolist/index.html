@@ -20,34 +20,20 @@
     <script>
       const liList = document.querySelectorAll("li");
       console.log(liList);
-      for(i = 0; i < liList.length; i ++) {
-          liList[i].style.color = "blue";
-
-
-
-
+      for (i = 0; i < liList.length; i++) {
+        liList[i].style.color = "blue";
       }
-      const liUl = document.querySelector('.list');
+      const liUl = document.querySelector(".list");
       liUl.removeChild(liList[2]);
 
-      const newLi = document.createElement('p');
-      newLi.innerText = 'đây là thẻ được thêm để thử code';
+      const newLi = document.createElement("p");
+      newLi.innerText = "đây là thẻ được thêm để thử code";
 
       liList[3].insertAdjacentElement("beforebegin", newLi);
       const li1_2 = newLi.cloneNode(true);
       liUl.appendChild(li1_2);
-      
+
       const ulli2 = liUl.cloneNode(false);
-      
-
-
-
-
-
-
-
-
-
     </script>
   </body>
 </html>

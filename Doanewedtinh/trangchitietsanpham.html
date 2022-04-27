@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chi tiết sản phẩm</title>
+    <title>trang chi tiết sản phẩm</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,11 +12,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./trangchitietsanpham.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./trangchu.js" />
   </head>
   <body>
     <div class="container-flui">
-      <div class="part-1 row">
-        <div class="col-xl-2">
+      <div class="part-1 row part-1-deskop">
+        <div class="col-xl-2 col-sm-3">
           <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
         </div>
         <div class="col-xl-2 text-sanpham">
@@ -32,7 +37,7 @@
           </a>
         </div>
         <div class="col-xl-5">
-          <input class="btn-search" type="text" placeholder="tìm kiếm" />
+          <input class="btn-search" type="text" placeholder=" tìm kiếm" />
         </div>
         <div class="col-xl-2 giohang">
           <a href="./giohang.html">
@@ -40,213 +45,105 @@
           </a>
         </div>
         <div class="col-xl-1">
-          <div class="image-top"></div>
+          <a href="./dangnhap.html"><div class="image-top"></div></a>
         </div>
       </div>
-      <div class="part-2">
-        <p class="part2-tieude">
-          <span class="part2-textvietphat">Việt Phát/</span>
-          <span class="part2-textsanpham">Sản phẩm/</span>
-          <span class="part2-textsanphamdt">Hoạt huyết Lazine</span>
-        </p>
-        <div class="part2-formmain">
-          <div class="part2-formImg">
-            <img
-              style="max-width: 100%; max-height: 100%"
-              src="https://cf.shopee.vn/file/c32e086215b96e0c1157336b670faff7"
-              alt="ảnh chi tiết 1 sản phẩm"
-            />
+      <div class="row part-1-mobie">
+        <div class="col-11">
+          <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
+        </div>
+        <div class="icon-humbugur col-1">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+      <div class="row part-2">
+        <div class="col-md-6 form-img">
+          <div class="img-chitiet">
+            <img style="max-width: 100%" src="./imgs/anhthu.jpeg" alt="" />
           </div>
-          <div class="part2-formInf">
-            <div class="formInf-name">
-              <div class="text-productDetail">
-                Hoạt huyết dưỡng não Lazine Extra
-              </div>
-              <div class="rate">
-                
-                <div style="margin-left: 40%">
-                  <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
-                </div>
-                <div>
-                  <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
-                </div>
-                <div>
-                  <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
-                </div>
-                <div>
-                  <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
-                </div>
-                <div>
-                  <img src="./imgs/ngoisao.png" alt="ngôi sao hi vọng" />
-                </div>
-              </div>
+        </div>
+        <div class="col-md-6 form-inf">
+          <div class="inf-motachitiet">
+            <div class="tensanpham-chitiet">
+              Viên bổ trợ sức khỏe viên uống 9B
             </div>
-            <div class="formInf-size">
-              <div class="size">
-                <div class="size1">Size</div>
-                <div class="hop30v">Hộp 30 viên</div>
-                <div class="hop60v">Hộp 60 viên</div>
-                <div class="hop100v">Hộp 100 viên</div>
-              </div>
-              <div class="price">
-                <div class="text-gia">Giá</div>
-                <div class="price-value">
-                  <span class="value">300.000</span>VNĐ
-                </div>
-              </div>
-              <div class="amount">
-                <div class="text-gia">Số lượng</div>
-                <div class="tanggiam">
-                  <button class="btn-sub">-</button>
-                  <div class="number">1</div>
-                  <button class="btn-add">+</button>
-                </div>
-              </div>
+            <div>
+              Sản phẩm <i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+              ><i class="bi bi-star-half"></i>
             </div>
-            <div class="formInf-btnthemhang">
-              <a href="./giohang.html"
-                ><button class="btn-themhang">Thêm vào giỏ hàng</button></a
+
+            <div class="don-gia">
+              Đơn giá :
+              <span style="color: rgb(197, 113, 113); margin-left: 2%"
+                >630.000</span
               >
             </div>
+            <div style="display: flex">
+              <div class="so-luong">Số lượng:</div>
+              <button class="btn-tanggiam"><i class="bi bi-dash"></i></button>
+              <input
+                class="input-soluong"
+                type="text"
+                name=""
+                id=""
+                placeholder="1"
+              />
+              <button class="btn-tanggiam"><i class="bi bi-plus"></i></button>
+            </div>
+            <div class="themvaogiohang">
+              <button class="btn-themhang">
+                <i class="bi bi-cart-plus"></i>Thêm vào giỏ hàng
+              </button>
+              <button class="btn-muangay">Mua ngay</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="part-3">
-        <h6>Mô tả sản phẩm</h6>
-        <ul>
-          <li>
-            Giúp làm giảm và cải thiện thiểu năng tuần hoàn máu não, đau đầu,
-            đau nửa đầu, hoa mắt chóng mặt, ù tai, đau mỏi vai gáy, thiếu máu
-            não, suy giảm trí nhớ.
-          </li>
-          <li>
-            Giúp phòng ngừa và làm giảm các duy chứng sau tai biến mạch máu não,
-            bảo vệ và tăng cường hoạt động của não.
-          </li>
-          <li> 
-            Bồi bổ khí huyết, hoạt huyết dưỡng não, giúp giảm căng thẳng, mệt
-            mỏi, tăng cường thì lực.
-          </li>
-        </ul>
-      </div>
-      <div class="part-4">
-        <div class="part4-comment">
-          <div class="part4-commentTextbinhluan">Bình luận</div>
-          <div class="part4-commentUsername1">
-            <div class="part4-commentUsername1a">
-              Cụ già búp bê
-              <img
-                style="width: 1.5%; margin-left: 2%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-            </div>
+        <div class="mota-them">
+          <ul>
+            <div style="font-size: 1.3rem">MÔ TẢ SẢN PHẨM</div>
 
-            <div class="lorem" style="font-size: 15px; color: rgb(66, 59, 59)">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-              voluptates fuga eius labore. Omnis suscipit eveniet quibusdam,
-              ratione perspiciatis voluptas rerum reiciendis animi dignissimos,
-              tempore, itaque quae minima temporibus distinctio.
-            </div>
-          </div>
-          <div class="part4-commentUsername2">
-            <div class="part4-commentUsername1a">
-              Lão Phật gia
-              <img
-                style="width: 1.5%; margin-left: 2%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-              <img
-                style="width: 1.5%"
-                src="./imgs/ngoisao.png"
-                alt="ngôi sao hi vọng"
-              />
-            </div>
-            <div class="lorem" style="font-size: 15px; color: rgb(66, 59, 59)">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
-              voluptates fuga eius labore. Omnis suscipit eveniet quibusdam,
-              ratione perspiciatis voluptas rerum reiciendis animi dignissimos,
-              tempore, itaque quae minima temporibus distinctio.
-            </div>
-          </div>
-
-          <div class="part4-mycomment">
-            <input
-              class="input-mycomment"
-              type="text"
-              placeholder="Phản hồi của bạn"
-            />
-          </div>
-          <div class="btn-guidi">
-            <button style="background-color: rgb(230, 5, 5); color: white">
-              Gửi
-            </button>
-          </div>
+            <li style="font-size: 1.1rem">
+              Hỗ trợ điều trị các chứng căng thăng, lo âu do làm việc với máy
+              tính quá sức
+            </li>
+            <li style="font-size: 1.1rem">
+              Bổ sung vitamin cho các trường hợp suy nhược, vừa phẫu thuật, phụ
+              nữ mang thai, mệt mỏi, chán ăn
+            </li>
+            <li style="font-size: 1.1rem">Tăng sức đề kháng, cải thiện hệ miễn dịch</li>
+          </ul>
         </div>
       </div>
-      <div class="part-5">
-        <div class="part4-cl1">
-          <div class="part4-text1a">Việt Phát</div>
-          <div class="part4-text1b">20a Hạ Đình,Thanh Xuân,Hà Nội</div>
-          <div class="part4-text1b">0972107926</div>
-          <div class="part4-text1b">www.vietphat.com</div>
-          <div class="part4-text1b"></div>
+      <div>san pham lien quan</div>
+
+      <div class="chat"><i class="bi bi-chat-dots"></i></div>
+
+      <div class="part-4 row">
+        <div class="part4 col-sm-3">
+          <div class="part4-texthead">Việt Phát</div>
+          <a href="">20a Hạ Đình,Thanh Xuân,Hà Nội</a>
+          <a href="">0972107926</a>
+          <a href="">w.vietphat.com</a>
         </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Manu</div>
-          <div class="part4-text1b">Thuốc bổ phổi</div>
-          <div class="part4-text1b">Thuốc bổ não</div>
-          <div class="part4-text1b">Thuốc bổ gan</div>
-          <div class="part4-text1b">Calci</div>
+        <div class="part4 col-sm-3">
+          <div class="part4-texthead">Manu</div>
+          <a href="">Thuốc bổ phổi</a>
+          <a href="">Thuốc bổ não</a>
+          <a href="">Thuốc bổ gan</a>
         </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Cộng đồng</div>
-          <div class="part4-text1b">Facebook</div>
-          <div class="part4-text1b">Instagram</div>
-          <div class="part4-text1b">Zalo</div>
-          <div class="part4-text1b">Tiktok</div>
+        <div class="part4 col-sm-3">
+          <div class="part4-texthead">Cộng đồng</div>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-google"></i></a>
         </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Phản hồi</div>
-          <div class="part4-text1b part4-text1bc">
-            <input class="form-email" type="text" placeholder="Send email us" />
-            <button class="btn-sendEmail">
-              <img
-                style="max-width: 100%; max-height: 100%"
-                src="./imgs/muitensendemail.png"
-                alt="mũi tên send email"
-              />
+        <div class="part4 col-sm-3 part4-texthead part4-phanhoi">
+          <div>Phản hồi</div>
+          <div class="phanhoi">
+            <input class="input-phanhoi" type="text" placeholder="Phản hồi" />
+            <button class="btn-phanhoi">
+              <i class="bi bi-send"></i>
             </button>
           </div>
         </div>

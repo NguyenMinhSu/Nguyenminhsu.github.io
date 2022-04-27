@@ -1,7 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .part-1 {
   align-items: center;
   text-align: center;
   height: 100px;
+  max-width: 100%;
   background-image: linear-gradient(to right, rgb(236, 218, 195), white);
 }
 .btn-search {
@@ -10,7 +17,7 @@
   border: 0px solid;
 }
 .text-vietphat {
-  font-size: 180%;
+  font-size: 2rem;
   font-weight: 700;
   color: black;
   text-decoration: none;
@@ -36,247 +43,373 @@
 .giohang {
   text-align: end;
 }
-.part2-textvietphat {
-  font-size: 15px;
-  font-weight: 400;
+.part-2 {
+  min-height: 800px;
+  height: auto;
+  background-image: url(./imgs/backgroundimagepart2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 1%;
+  border-top-width: 2%;
 }
-.part2-textsanpham {
-  font-size: 15px;
-  font-weight: 400;
-}
-.part2-textsanphamdt {
-  font-size: 15px;
-  font-weight: 400;
-  color: rgb(180, 105, 105);
-}
-.part2-tieude {
-  margin-top: 2%;
-  margin-left: 10%;
-}
-.part2-formmain {
-  width: 80%;
-  background-color: bisque;
-  height: 300px;
-  margin-left: 10%;
+
+.text-part2 {
+  margin-left: 5%;
+  height: 60px;
   display: flex;
+  align-items: flex-end;
 }
-.part2-formImg {
-  width: 40%;
-  background-color: rgb(255, 255, 255);
-}
-.part2-formInf {
-  width: 60%;
-  background-color: rgb(246, 251, 255);
-}
-.formInf-name {
-  width: 100%;
-  height: 20%;
-  display: block;
-}
-.formInf-size {
-  width: 100%;
-  height: 60%;
-  margin-top: 2%;
-  border: 1px solid;
-  border-color: gray;
-  border-bottom: hidden;
-  border-left: hidden;
-  border-right: hidden;
-}
-.formInf-btnthemhang {
-  width: 100%;
-  height: 20%;
-}
-.text-productDetail {
-  font-size: 120%;
-  font-style: normal;
-  color: black;
+.text-tpcn {
+  font-size: 160%;
   font-weight: 500;
-  height: 60%;
-  overflow: hidden;
-}
-.rate {
-  height: 40%;
-  width: 50%;
-  display: flex;
-}
-.size {
   width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
 }
-.btn-rate {
-  border-width: 0%;
-  border-color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-}
-.size1 {
-  width: 15%;
-}
-.hop30v {
-  border: 1px solid;
-  font-size: 100%;
-  padding: 0% 1%;
-}
-.hop60v {
-  margin-left: 5%;
-  border: 1px solid;
-  padding: 0% 1%;
-}
-.hop100v {
-  margin-left: 5%;
-  border: 1px solid;
-  padding: 0% 1%;
-}
-.price {
-  display: flex;
-}
-.text-gia {
-  width: 15%;
-}
-.value {
-  color: red;
-  margin-right: 5%;
-}
-.amount {
-  display: flex;
-  height: 30%;
-  align-items: center;
-}
-.btn-sub {
-  width: 33%;
-  border-color: rgb(255, 255, 255);
-}
-.number {
-  width: 33%;
+.product-form {
+  max-width: 80%;
+  margin-left: 10%;
 
-  align-items: center;
+  margin-top: 3%;
 }
-.btn-add {
-  width: 33%;
-  border-color: rgb(255, 255, 255);
-}
-.btn-themhang {
-  border-color: rgb(255, 255, 255);
-  background-color: red;
-  color: white;
-  border-radius: 4px;
-  border: 1px solid;
-
-}
-.formInf-btnthemhang {
-  margin-left: 2%;
-}
-.tanggiam {
+.productList-part2 {
   display: flex;
-  width: 15%;
+  flex-wrap: wrap;
+  justify-content: space-around;
   text-align: center;
 }
-.part-3 {
-  width: 80%;
-  height: 150px;
-  margin: 4% 10%;
-  background-color: white;
+.product {
+  width: 22%;
+  height: 300px;
   overflow: hidden;
 }
-.part4-comment {
-  width: 80%;
-  height: 400px;
-  margin-left: 10%;
-  background-color:white;
-}
-.part4-commentUsername1 {
-  width: 96%;
-  margin-left: 2%;
-  height: 30%;
-  border: 1px solid;
-}
-.part4-commentTextbinhluan {
+
+.product-img {
+  height: 70%;
   width: 100%;
-  height: 10%;
-  color: black;
-  font-size: 18px;
-  font-weight: 500;
 }
-.part4-commentUsername1a {
+.product-img1 {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.product-text1 {
+  color: blue;
+  font-size: 120%;
+  font-weight: 400;
+}
+.product-text2 {
+  color: gray;
+  font-size: 70%;
+}
+.product-text3 {
+  color: red;
+  font-size: 100%;
+}
+.btn-xemthem {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.part-3 {
+  height: auto;
+  max-width: 100%;
+  margin-top: 4%;
+  align-items: center;
+  text-align: center;
+}
+.img-left {
+  min-width: 100%;
+  height: 80%;
+}
+.text-left {
   width: 100%;
   height: 20%;
-  display: flex;
-  align-items: center;
 }
-.part4-commentUsername2 {
-  width: 96%;
-  margin-left: 2%;
-  height: 30%;
-  border: 1px solid;
-  margin-top: 1%;
+.part-4 {
+  margin-top: 2%;
+  background-color: rgb(243, 224, 200);
+  color: rgb(90, 85, 85);
 }
-.part4-mycomment {
-  width: 96%;
-  height: 14%;
-  margin-left: 2%;
-  margin-top: 1%;
-  border: 1px solid;
-}
-.lorem {
+
+.image {
   width: 100%;
-  height: 80%;
-  overflow: hidden;
+  height: 300px;
 }
-.input-mycomment {
+.image img {
   width: 100%;
   height: 100%;
 }
-.btn-guidi {
-  width: 98%;
-  text-align:end;
-  border-color: white;
-  margin-top: 0.5%;
-  
-}
-.part-5 {
-  background-color: rgb(255, 255, 255);
-  width: 80%;
-  height: 200px;
-  margin-left: 9%;
-  margin-right: 11%;
-  margin-top: 5%;
+.part-1-mobie {
   display: flex;
-  justify-content: space-between;
-  border: 2px solid rgb(211, 207, 207);
-  border-left: hidden;
-  border-right: hidden;
+  align-items: center;
+
+  height: 100px;
+  max-width: 100%;
+  background-image: linear-gradient(to right, rgb(236, 218, 195), white);
 }
-.part4-cl1 {
-  width: 23%;
+
+.icon-humbugur {
+  display: flex;
+  text-align: end;
 }
-.part4-text1a {
-  width: 100%;
-  height: 20%;
-  margin-top: 10%;
-  font-size: 24px;
-  font-weight: 500;
+.bi-list {
+  font-size: 2.5rem;
 }
-.part4-text1b {
-  width: 100%;
-  font-size: 14px;
-  color: grey;
+.bi-chat-dots {
+  font-size: 2rem;
 }
-.part4-text1bc {
-  width: 100%;
+.chat {
+  margin-left: 90%;
+  margin-bottom: 5%;
+  height: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  .part-1-deskop {
+    display: flex;
+  }
+  .part-1-mobie {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .part-1-deskop {
+    display: none;
+  }
+  .text-vietphat {
+    margin-left: 3%;
+  }
+  .part-2 {
+    height: auto;
+  }
+  .part-3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .product {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .product {
+    width: 48%;
+  }
+  .part4 {
+    width: 33%;
+  }
+  .part4-phanhoi {
+    display: none;
+  }
+  .part-slider {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .chat {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(71, 66, 66);
+}
+.phanhoi {
   display: flex;
 }
-.btn-sendEmail {
-  background-color: rgb(241, 189, 124);
-  width: 20%;
-  position: relative;
-  border-radius: 4px;
-  border: 0px solid;
+.input-phanhoi {
+  width: 60%;
+}
+.btn-phanhoi {
+  border-radius: 5px;
+  background-color: red;
+  color: white;
   margin-left: 1%;
 }
-.form-email {
-  width: 80%;
+.part4-texthead {
+  font-size: 120%;
+  color: rgb(26, 16, 16);
+  font-weight: 400;
+}
+.form-img {
+  justify-content: center;
+  height:fit-content;
+}
+.form-inf {
+  height: fit-content;
+}
+.img-chitiet {
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+.inf-motachitiet {
+  margin-top: 10%;
+  height: auto;
+}
+.input-soluong {
+  width: 50px;
+  height: 32px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.btn-tanggiam {
+  width: 30px;
+  height: 32px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  
+}
+.themvaogiohang {
+  display: flex;
+
+  height: 32px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.btn-themhang {
+  width: auto;
+  height: 42px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: rgb(250, 226, 226);
+  color: rgb(192, 96, 96);
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.btn-muangay {
+  width: auto;
+  height: 42px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: rgb(248, 95, 95);
+  color: #fff;
+  margin-left: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.tensanpham-chitiet {
+  font-size: 1.7rem;
+  
+}
+
+
+@media only screen and (max-width:992px) {
+  .form-inf {
+    margin-top: -10%;
+    margin-left: 12%;
+  }
+  .img-chitiet {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+}
+@media only screen and (max-width:768px) {
+  .img-chitiet {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+.img-chitiet {
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 10%;
+  margin-left: 12%;
+}
+}
+@media only screen and (max-width:576px) {
+  .img-chitiet {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+.form-inf {
+  margin-left: 3%;
+  margin-top: 0%;
+}
+.tensanpham-chitiet {
+  margin-top: -33%;
+}
+.inf-motachitiet {
+  margin-top: 30%;
+}
+}
+.don-gia {
+  color: rgb(70, 60, 60);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.so-luong {
+  height: 50px;
+  font-size: 1.5rem;
+  margin-right: 1%;
+}
+.mota-them {
+  margin-left: 10%;
+  margin-top: -19%;
+}
+@media only screen and (max-width:992px) {
+  .mota-them {
+    margin-top: -4%;
+  }
+}
+@media only screen and (max-width:768px) {
+  .mota-them {
+    margin-top: 0%;
+    margin-left: 1%;
+  }
+}
+@media only screen and (min-width:1200px) {
+  .mota-them {
+    margin-top: -10%;
+    margin-left: 12%;
+  }
 }

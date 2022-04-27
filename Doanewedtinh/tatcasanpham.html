@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tất cả sản phẩm</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./tatcasanpham.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./trangchu.js" />
   </head>
   <body>
     <div class="container-flui">
-      <div class="part-1 row">
-        <div class="col-xl-2">
+      <div class="part-1 row part-1-deskop">
+        <div class="col-xl-2 col-sm-3">
           <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
         </div>
         <div class="col-xl-2 text-sanpham">
@@ -32,7 +37,7 @@
           </a>
         </div>
         <div class="col-xl-5">
-          <input class="btn-search" type="text" placeholder="tìm kiếm" />
+          <input class="btn-search" type="text" placeholder=" tìm kiếm" />
         </div>
         <div class="col-xl-2 giohang">
           <a href="./giohang.html">
@@ -43,482 +48,288 @@
           <a href="./dangnhap.html"><div class="image-top"></div></a>
         </div>
       </div>
+      <div class="row part-1-mobie">
+        <div class="col-11">
+          <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
+        </div>
+        <div class="icon-humbugur col-1">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+      <div class="part-slider">
+        <div class="image">
+          <a href="./trangchitietsanpham.html"
+            ><img
+              id="img"
+              onclick="changeImage()"
+              src="./imgs/quang-cao-thuc-pham-chuc-nang-1.jpeg"
+              alt=""
+          /></a>
+        </div>
+        <script>
+          var index = 1;
+          changeImage = function () {
+            var imgs = [
+              "./imgs/quang-cao-thuc-pham-chuc-nang-1.jpeg",
+              "./imgs/slider4.jpeg",
+              "./imgs/slider5.jpeg",
+            ];
+            document.getElementById("img").src = imgs[index];
+            index++;
+            if (index == 3) {
+              index = 0;
+            }
+          };
+          setInterval(changeImage, 3000);
+        </script>
+      </div>
 
       <div class="part-2">
-        <div class="Text-tatcasanpham">Tất cả sản phẩm</div>
-        <div class="row list-sanpham1">
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 khung-chitietsanpham">
-            <div class="khung-chitietanh">
-              <a href="./trangchitietsanpham.html">
-                <img src="./imgs/belucan.jpeg" alt="belucan"
-              /></a>
-            </div>
-            <div class="khung-tensanpham">
-              <div>
-                <div class="Ten-sanphamchitiet">
-                  <a
-                    style="color: black; text-decoration: none"
-                    href="./trangchitietsanpham.html"
-                    >Belucan</a
-                  >
-                </div>
-                <div class="gia-sanphamchitiet">
-                  <div class="price-chitiet">60.000 đ</div>
-                  <div class="themvaogiohang">
-                    +<img style="width: 55%" src="./imgs/giohang.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+        <div class="text-part2">
+          <p class="text-tpcn">Tất cả sản phẩm</p>
         </div>
-        <div class="xemthem">
-          <button class="btn-xemthem">xem thêm >></button>
+
+        <div class="product-form">
+          <div class="row">
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+               <a href="./trangchitietsanpham.html"><img
+                class="img-chitiet"
+                src="./imgs/belucan2.jpg"
+                alt="belucan2"
+              /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-chitiet col-xl-3 col-md-4 col-sm-6">
+              <div class="form-imgchitiet">
+                <a href="./trangchitietsanpham.html"><img
+                  class="img-chitiet"
+                  src="./imgs/belucan2.jpg"
+                  alt="belucan2"
+                /></a>
+              </div>
+              <div class="form-motachitiet">
+                <div style="font-size: 1.5rem">Belucan</div>
+                <div style="display: flex;  justify-content: space-between;">
+                  <span style="color: rgb(236, 116, 116);font-size: 1.2rem;font-weight: 500;">60.000</span>
+                  <i class="bi bi-cart-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div></div>
-        <div></div>
+
+        <div class="btn-xemthem">
+          <a href="./tatcasanpham.html"
+            ><button
+              style="
+                width: 150px;
+                color: white;
+                border: 0px solid;
+                background-color: red;
+                border-radius: 5px;
+                font-size: 130%;
+              "
+            >
+              Xem thêm
+            </button>
+          </a>
+        </div>
       </div>
-      <div class="part-4">
-        <div class="part4-cl1">
-          <div class="part4-text1a">Việt Phát</div>
-          <div class="part4-text1b">20a Hạ Đình,Thanh Xuân,Hà Nội</div>
-          <div class="part4-text1b">0972107926</div>
-          <div class="part4-text1b">www.vietphat.com</div>
-          <div class="part4-text1b"></div>
+      <div class="chat"><i class="bi bi-chat-dots"></i></div>
+
+      <div class="part-4 row">
+        <ul class="part4 col-sm-3">
+          <li class="part4-texthead">Việt Phát</li>
+          <li><a href="">20a Hạ Đình,Thanh Xuân,Hà Nội</a></li>
+          <li><a href="">0972107926</a></li>
+          <li><a href="">w.vietphat.com</a></li>
+        </ul>
+        <div class="part4 col-sm-3">
+          <div class="part4-texthead">Manu</div>
+          <a href="">Thuốc bổ phổi</a>
+          <a href="">Thuốc bổ não</a>
+          <a href="">Thuốc bổ gan</a>
         </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Manu</div>
-          <div class="part4-text1b">Thuốc bổ phổi</div>
-          <div class="part4-text1b">Thuốc bổ não</div>
-          <div class="part4-text1b">Thuốc bổ gan</div>
-          <div class="part4-text1b">Calci</div>
+        <div class="part4 col-sm-3">
+          <div class="part4-texthead">Cộng đồng</div>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-google"></i></a>
         </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Cộng đồng</div>
-          <div class="part4-text1b">Facebook</div>
-          <div class="part4-text1b">Instagram</div>
-          <div class="part4-text1b">Zalo</div>
-          <div class="part4-text1b">Tiktok</div>
-        </div>
-        <div class="part4-cl1">
-          <div class="part4-text1a">Phản hồi</div>
-          <div class="part4-text1b part4-text1bc">
-            <input class="form-email" type="text" placeholder="Send email us" />
-            <button class="btn-sendEmail">
-              <img
-                style="max-width: 100%; max-height: 100%"
-                src="./imgs/muitensendemail.png"
-                alt="mũi tên send email"
-              />
+        <div class="part4 col-sm-3 part4-texthead part4-phanhoi">
+          <div>Phản hồi</div>
+          <div class="phanhoi">
+            <input class="input-phanhoi" type="text" placeholder="Phản hồi" />
+            <button class="btn-phanhoi">
+              <i class="bi bi-send"></i>
             </button>
           </div>
         </div>
