@@ -22,6 +22,7 @@ btn.addEventListener("click", function () {
            result = "đăng nhập thành công";
           }
     }
+    alert(result);
+    }
     
-    }alert(result);
     });

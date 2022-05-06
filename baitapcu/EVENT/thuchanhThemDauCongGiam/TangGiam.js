@@ -9,12 +9,12 @@
 //Nếu counter < 0 có màu red
 
 
-const counter = document.querySelector('#counter')
+const counter = document.querySelector('#counter');
 const btnAdd = document.querySelector(".nextBtn");
 //console.log(btnAdd);
 const btnMinus = document.querySelector(".prevBtn");
  counter.innerText = 0;
-
+ 
 btnAdd.addEventListener('click', function () {
  counter.innerText = + counter.innerText + 1;
  changecolor();

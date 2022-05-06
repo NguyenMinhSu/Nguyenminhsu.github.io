@@ -2,30 +2,105 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form đăng kí</title>
+    <title>form đăng kí</title>
     <style>
-      body {
-        margin: 0;
+      * {
         padding: 0;
+        margin: 0;
+        box-sizing: border-box;
       }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7RLYuxVfa4_kOIj5GdTQo4p3TZuO2hOa1A&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 2rem;
+      }
+
       .container {
-        width: 40%;
-        height:630px;
-        
-        margin-left: 30%;
-        margin-top: 5%;
+        width: 400px;
         border: 1px solid;
+        padding: 20px;
       }
-      .container-2 {
-        width: 80%;
-        height:fit-content;
-        margin: 10%;
+
+      .form-input {
+        margin-bottom: 1rem;
+        position: relative;
       }
-      .tieude {
+
+      .form-input button {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 28px;
+        border: none;
+        background-color: transparent;
+      }
+
+      .form-input button:hover {
+        text-decoration: underline;
+        color: #3171e5;
+      }
+
+      input {
+        border: 1px solid #ccc;
+        height: 36px;
+        line-height: 36px;
+        padding-left: 10px;
         width: 100%;
-        height: 10%;
+      }
+
+      #btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #3171e5;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      #btn:disabled {
+        background-color: unset;
+      }
+
+      .error {
+        display: inline-block;
+        color: orangered;
+      }
+
+      .success {
+        border: 1px solid green;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .alert {
+        color: #fff;
+        background-color: #0be881;
+        height: 50%;
+        width: 60%;
+        font-size: 2em;
+        position: absolute;
+        top: -600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
       }
       .text-tieude {
         height: 100%;
@@ -34,119 +109,128 @@
         font-weight: 500;
         text-align: center;
       }
-      .email {
-        width: 100%;
-        height: 15%;
-      }
-      .btn-input {
-        width: 90%;
-        height: 30px;
-        font-size: 80%;
-        font-style: italic;
-      }
-      .text-saiemail {
-        font-size: 90%;
-        color: red;
-        font-style: italic;
-      }
-      .matkhau {
-        width: 100%;
-        height: 15%;
-      }
-      .quenmatkhau {
-        text-align: end;
-      }
-      .text-quenmatkhau {
-        font-size: 90%;
-        margin-right: 10%;
-        margin-top: 0;
-      }
-      .dangnhap {
-        width: 100%;
-        height: 10%;
-        text-align: center;
-        margin-top: 10%;
-      }
-      .btn-dangki {
-        width: 70%;
-        height:30px;
-        background-color: red;
-        color: white;
-        border-color: none;
-        border-radius: 10px;
-      }
-      .text-last {
-        font-size: 100%;
-        text-align: center;
-      }
-      .dangnhapvoi {
-          text-align: center;
-      }
-      .dangnhapvoi-img {
-          display: flex;
-          justify-content: space-around;
-          margin-top: 7%;
-          width: 60%;
-          margin-left: 20%;
-      }
-      .dangnhapvoi-img1 {
-          width: 10%;
-      }
-      .text-dangnhapvoi {
-          font-size: 90%;
-          color:black ;
-      }
-      body {
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-7RLYuxVfa4_kOIj5GdTQo4p3TZuO2hOa1A&usqp=CAU);
-        background-repeat: no-repeat;
-        background-size:cover;
-      }
     </style>
   </head>
+
   <body>
+    <div class="alert">Registration completed successfully</div>
     <div class="container">
-      <div class="container-2">
-        <div class="tieude">
-          <div class="text-tieude">Đăng kí</div>
+      <div class="text-tieude">Đăng kí</div>
+      <form id="registrationForm">
+        <div class="form-input">
+          <input id="username" type="text" />
         </div>
-        <div class="email">
-          <div>Họ tên *</div>
-          <input class="btn-input" type="text" placeholder="Nhập họ tên" />
-          <div class="text-saiemail">Không để trống</div>
+        <div class="form-input">
+          <input id="password" type="password" />
+          <button>Hiện</button>
         </div>
-        <div class="matkhau">
-          <div>SĐT *</div>
-          <input class="btn-input" type="text" placeholder="Nhập số điện thoại" />
-          <div class="text-saiemail">Không để trống..</div>
+        <div class="form-input">
+          <input id="confirmPassword" type="password" />
+          <button>Hiện</button>
         </div>
-        <div class="matkhau">
-          <div> Địa chỉ Email *</div>
-          <input class="btn-input" type="text" placeholder="Nhập địa chỉ Email" />
-          <div class="text-saiemail">Không để trống..</div>
-        </div>
-        <div class="matkhau">
-          <div>Mật khẩu *</div>
-          <input class="btn-input" type="text" placeholder="Nhập mật khẩu" />
-          <div class="text-saiemail">Không để trống..</div>
-        </div>
-        
-        <div class="dangnhap">
-          <button class="btn-dangki">Đăng kí</button>
-        </div>
-        <div class="dangnhapvoi">
-           <div class="text-dangnhapvoi">Hoặc đăng nhập với</div>
-           <div class="dangnhapvoi-img">
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;max-height:100%" src="./imgs/bieutuongfacebook.png" alt="fb"></div>
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;height:100%" src="./imgs/bieutuongzalo.png" alt="zl"></div>
-             <div class="dangnhapvoi-img1"><img style="max-width:100%;max-height:100%" src="./imgs/bieutuonggoogle.jpeg" alt="G+"></div>
-           </div>
-        </div>
-        <div class="chuacotaikhoan">
-          <p class="text-last">
-            Bạn đã có tài khoản? <a href="./dangnhap.html">Đăng nhập ngay</a>
-          </p>
-        </div>
-      </div>
+        <button type="submit" id="btn">Register</button>
+      </form>
     </div>
+    <script>
+      // Thêm label cho các trường username, password, confirm password
+
+      let username = document.querySelector("#username");
+      let password = document.querySelector("#password");
+      let confirm = document.querySelector("#confirmPassword");
+
+      let labelUsername = document.createElement("label");
+      labelUsername.for = "username";
+      labelUsername.innerText = "Username: ";
+      username.insertAdjacentElement("beforebegin", labelUsername);
+
+      let labelPassword = document.createElement("label");
+      labelPassword.for = "password";
+      labelPassword.innerText = "Password: ";
+      password.insertAdjacentElement("beforebegin", labelPassword);
+
+      let labelConfirm = document.createElement("label");
+      labelConfirm.for = "confirmPassword";
+      labelConfirm.innerText = "Confirm : ";
+      confirm.insertAdjacentElement("beforebegin", labelConfirm);
+
+      // Kiểm tra xem password và confirm pass có trùng nhau hay không
+
+      password.addEventListener("input", function () {
+        if (password.value === confirm.value) {
+          
+          password.classList.add("success");
+          confirm.classList.add("success");
+          password.classList.remove("error");
+          confirm.classList.remove("error");
+          
+        } else {
+          password.classList.remove("success");
+          confirm.classList.remove("success");
+          password.classList.add("error");
+          confirm.classList.add("error");
+        }
+      });
+
+      confirm.addEventListener("input", function () {
+        if (password.value === confirm.value) {
+          password.classList.add("success");
+          confirm.classList.add("success");
+          password.classList.remove("error");
+          confirm.classList.remove("error");
+        } else {
+          password.classList.remove("success");
+          confirm.classList.remove("success");
+          password.classList.add("error");
+          confirm.classList.add("error");
+        }
+      });
+
+      // Đảm bảo nút ‘Đăng ký’ bị disable cho đến khi người dùng nhập dữ liệu hợp lệ vào tất cả các trường đầu vào.
+      // Sau khi nhập đầy đủ thì ‘Đăng ký’ được enable.
+
+      let submit = document.querySelector("#btn");
+      submit.disabled = true;
+
+      username.addEventListener("input", function () {
+        if (
+          username.value !== "" &&
+          password.value !== "" &&
+          password.value === confirm.value
+        ) {
+          submit.disabled = false;
+        } else {
+          submit.disabled = true;
+        }
+      });
+      password.addEventListener("input", function () {
+        if (
+          username.value !== "" &&
+          password.value !== "" &&
+          password.value === confirm.value
+        ) {
+          submit.disabled = false;
+        } else {
+          submit.disabled = true;
+        }
+      });
+      confirm.addEventListener("input", function () {
+        if (
+          username.value !== "" &&
+          password.value !== "" &&
+          password.value === confirm.value
+        ) {
+          submit.disabled = false;
+        } else {
+          submit.disabled = true;
+        }
+      });
+      // Khi user nhập đủ thông tin và bấm vào nút submit thì tạo 1 hộp thoại thông báo đăng ký thành công
+      let container = document.querySelector(".container");
+      let alert = document.querySelector(".alert");
+      submit.addEventListener('click', function () {
+        submit.innerHTML = ('Đăng kí thành công')
+        
+      });
+    </script>
   </body>
 </html>

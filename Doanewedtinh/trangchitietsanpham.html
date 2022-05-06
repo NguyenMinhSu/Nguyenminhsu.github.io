@@ -16,8 +16,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./trangchu.js" />
+    <link rel="stylesheet" href="./trangchitietsanpham.js" />
   </head>
+  <script>
+    alert("Xin chào,hãy đăng nhập để nhận thông báo về sản phẩm");
+  </script>
   <body>
     <div class="container-flui">
       <div class="part-1 row part-1-deskop">
@@ -53,7 +56,57 @@
           <a class="text-vietphat" href="./trangchu.html">Việt Phát</a>
         </div>
         <div class="icon-humbugur col-1">
-          <i class="bi bi-list"></i>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div
+            style="z-index: 1055"
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Manu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul>
+                <li style="text-align: start">
+                  <a style="font-size: 1.5rem" href="./tatcasanpham.html"
+                    >Tất cả sản phẩm</a
+                  >
+                </li>
+                <li style="text-align: start">
+                  <a style="font-size: 1.5rem" href=".//dangnhap.html"
+                    >Đăng nhập</a
+                  >
+                </li>
+                <li style="text-align: start">
+                  <a style="font-size: 1.5rem" href="./giohang.html"
+                    >Giỏ hàng</a
+                  >
+                </li>
+                <li style="text-align: start">
+                  <a style="font-size: 1.5rem" href="./dangnhap.html"
+                    >Đăng nhập</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row part-2">
@@ -75,27 +128,29 @@
 
             <div class="don-gia">
               Đơn giá :
-              <span style="color: rgb(197, 113, 113); margin-left: 2%"
-                >630.000</span
-              >
+              <span
+                id="don-gia"
+                style="color: rgb(197, 113, 113); margin-left: 2%"
+                >630000</span 
+              > 
             </div>
             <div style="display: flex">
-              <div class="so-luong">Số lượng:</div>
-              <button class="btn-tanggiam"><i class="bi bi-dash"></i></button>
+              <div id="so-luong">Số lượng:</div>
+              <button id="btn-tang"><i class="bi bi-dash"></i></button>
               <input
-                class="input-soluong"
+                id="input-soluong"
                 type="text"
-                name=""
-                id=""
-                placeholder="1"
+                role="spinbutton"
+                aria-valuenow="1"
+                value="1"
               />
-              <button class="btn-tanggiam"><i class="bi bi-plus"></i></button>
+              <button id="btn-giam"><i class="bi bi-plus"></i></button>
             </div>
-            <div class="themvaogiohang">
-              <button class="btn-themhang">
+            <div id="themvaogiohang">
+              <button id="btn-themhang">
                 <i class="bi bi-cart-plus"></i>Thêm vào giỏ hàng
               </button>
-              <button class="btn-muangay">Mua ngay</button>
+              <a id="btn-muangay" href="./thanhtoan.html">Mua ngay</a>
             </div>
           </div>
         </div>
@@ -111,7 +166,21 @@
               Bổ sung vitamin cho các trường hợp suy nhược, vừa phẫu thuật, phụ
               nữ mang thai, mệt mỏi, chán ăn
             </li>
-            <li style="font-size: 1.1rem">Tăng sức đề kháng, cải thiện hệ miễn dịch</li>
+            <li style="font-size: 1.1rem">
+              Tăng sức đề kháng, cải thiện hệ miễn dịch
+            </li>
+            <li style="font-size: 1.1rem">
+              Hỗ trợ điều trị các chứng căng thăng, lo âu do làm việc với máy
+              tính quá sức
+            </li>
+            <li style="font-size: 1.1rem">
+              Bổ sung vitamin cho các trường hợp suy nhược, vừa phẫu thuật, phụ
+              nữ mang thai, mệt mỏi, chán ăn
+            </li>
+            <li style="font-size: 1.1rem">
+              Tăng sức đề kháng, cải thiện hệ miễn dịch
+            </li>
+            
           </ul>
         </div>
       </div>
@@ -149,6 +218,46 @@
         </div>
       </div>
     </div>
+    <script>
+      const btnGiam = document.getElementById("btn-tang");
+      const btnTang = document.getElementById("btn-giam");
+      const inputSoluong = document.getElementById("input-soluong");
+      const btnthemVaoGioHang = document.getElementById("btn-themhang");
+      const muaNgay = document.getElementById("btn-muangay");
+      const dongia = document.getElementById("don-gia");
+      
+   
+
+
+      btnGiam.addEventListener("click", function () {
+        inputSoluong.value = +inputSoluong.value - 1;
+        dongia.innerHTML = inputSoluong.value * 630000;
+        ChangeColor();
+      });
+      btnTang.addEventListener("click", function () {
+        inputSoluong.value = +inputSoluong.value + 1;
+        dongia.innerHTML = inputSoluong.value * 630000;
+        ChangeColor();
+      });
+      function ChangeColor() {
+        if (+inputSoluong.value <= 0) {
+          inputSoluong.style.backgroundColor = "red";
+          dongia.innerHTML = 0;
+          inputSoluong.value = 0;
+          alert("số lượng sản phẩm phải lớn hơn 0");
+        } else {
+          inputSoluong.style.backgroundColor = "white";
+        }
+      }
+      btnthemVaoGioHang.addEventListener('click', function(){
+        btnthemVaoGioHang.innerHTML = 'Sản phẩm đã được thêm vào giỏ hàng'
+        btnthemVaoGioHang.style.backgroundColor = 'bisque';
+        
+      })
+      muaNgay.addEventListener('click', function(){
+
+      })
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

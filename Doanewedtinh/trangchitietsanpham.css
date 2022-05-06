@@ -249,7 +249,7 @@ a {
   margin-top: 10%;
   height: auto;
 }
-.input-soluong {
+#input-soluong {
   width: 50px;
   height: 32px;
   border-left: 0;
@@ -263,7 +263,7 @@ a {
   -webkit-appearance: none;
   border: 1px solid rgba(0, 0, 0, 0.09);
 }
-.btn-tanggiam {
+#btn-tang {
   width: 30px;
   height: 32px;
   border-left: 0;
@@ -276,9 +276,24 @@ a {
   border-radius: 0;
   -webkit-appearance: none;
   border: 1px solid rgba(0, 0, 0, 0.09);
-  
+  cursor: pointer;
+} 
+#btn-giam {
+  width: 30px;
+  height: 32px;
+  border-left: 0;
+  border-right: 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: text;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  cursor: pointer;
 }
-.themvaogiohang {
+#themvaogiohang {
   display: flex;
 
   height: 32px;
@@ -292,7 +307,7 @@ a {
   border-radius: 0;
   -webkit-appearance: none;
 }
-.btn-themhang {
+#btn-themhang {
   width: auto;
   height: 42px;
   border-left: 0;
@@ -310,7 +325,7 @@ a {
   padding-left: 1%;
   padding-right: 1%;
 }
-.btn-muangay {
+#btn-muangay {
   width: auto;
   height: 42px;
   border-left: 0;
@@ -328,6 +343,8 @@ a {
   margin-left: 2%;
   padding-left: 1%;
   padding-right: 1%;
+  display: flex;
+  align-items: center;
 }
 .tensanpham-chitiet {
   font-size: 1.7rem;
@@ -387,7 +404,7 @@ a {
   align-items: center;
   font-size: 1.5rem;
 }
-.so-luong {
+#so-luong {
   height: 50px;
   font-size: 1.5rem;
   margin-right: 1%;
@@ -411,5 +428,10 @@ a {
   .mota-them {
     margin-top: -10%;
     margin-left: 12%;
+  }
+}
+@media only screen and (min-width:992px) {
+  .part-2 {
+    height: 500px;
   }
 }

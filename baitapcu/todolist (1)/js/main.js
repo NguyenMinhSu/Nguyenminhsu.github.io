@@ -100,7 +100,7 @@ function deleteTodo(id) {
     for (let i = 0; i < todos.length; i++) {
         if (todos[i].id == id) {
             // Sử dụng splice để xóa
-            todos.splice(i, 1)
+            todos.splice(i, 1) 
         }
     }
     setDataToLocalStorage()
